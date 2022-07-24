@@ -1,0 +1,25 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "BackEnd para cadastro de filmes para StationOne",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js",
+        "dev": "nodemoon index.js"
+    },
+    "keywords": [
+        "backend",
+        "node.js",
+        "StationOne"
+    ],
+    "author": "Luan Fonseca",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.19"
+    }
+}
