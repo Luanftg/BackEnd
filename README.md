@@ -30,6 +30,12 @@ create table filmes (
     );
 ```
 
+```javascript
+alter table filme 
+	add createdAt date,
+  add updatedAt date;
+```
+
 - [x] Utilização de fluxo de trabalho: [git flow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow)
 - [ ] Instalação das libs:
   - [x] [express](http://expressjs.com/pt-br/)
