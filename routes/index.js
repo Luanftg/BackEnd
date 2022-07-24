@@ -7,7 +7,8 @@ routes.get('/', (req,res)=> {
 });
 
 routes.post("/cadastrar", (req,res)=>{
-    res.send('Cadastrei um filme!');
+    console.log(req.body);
+    res.json(req.body);
 })
 
 export default routes;
