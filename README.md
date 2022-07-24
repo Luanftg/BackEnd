@@ -1,10 +1,12 @@
 <img src="https://img.icons8.com/external-phatplus-lineal-color-phatplus/64/000000/external-api-cloud-security-phatplus-lineal-color-phatplus.png"/>
 
-# API - REST para StationOne-Filmes
+# API - REST para StationOne-Filmes :computer:
 
 ## Tecnologias
+<center>
 <img src="https://img.icons8.com/fluency/48/000000/node-js.png"/>
 <img src="https://img.icons8.com/ios/50/000000/mysql-logo.png"/>
+</center>
 
 ## Desafio
 
@@ -28,15 +30,24 @@ create table filmes (
     );
 ```
 
-- [ ] Utilização de fluxo de trabalho: [git flow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow)
+- [x] Utilização de fluxo de trabalho: [git flow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow)
 - [ ] Instalação das libs:
-  - [ ] [express](http://expressjs.com/pt-br/)
-  - [ ] [nodemon](https://nodemon.io/)
+  - [x] [express](http://expressjs.com/pt-br/)
+  - [x] [nodemon](https://nodemon.io/)
   - [ ] [ORM sequelize](https://sequelize.org/)
-- [ ] Collections no *POSTMAN* e *Thunder Client* para testar o funcionamento das requisições e resostas de status code
+  - [ ] [mysql2](https://www.npmjs.com/package/mysql2)
+- [ ] Criação dos endpoints:
+  - [ ] GET - `/filmes`
+  - [ ] GET - `/filmes/:id`
+  - [ ] POST `/filme` 
+- [x] Collections no *POSTMAN* e *Thunder Client* para testar o funcionamento das requisições e resostas de status code
 - [ ] Documentação via [Swagger](https://swagger.io/)
 
 ### Projeto Finalizado
+
+<center>
+
+</center>
 
 #### REFERENCIAS
 
