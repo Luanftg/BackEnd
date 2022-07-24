@@ -1,6 +1,10 @@
-# API - REST para :rocket: StationOne 
+<img src="https://img.icons8.com/external-phatplus-lineal-color-phatplus/64/000000/external-api-cloud-security-phatplus-lineal-color-phatplus.png"/>
 
-## Filmes :computer:
+# API - REST para StationOne-Filmes
+
+## Tecnologias
+<img src="https://img.icons8.com/fluency/48/000000/node-js.png"/>
+<img src="https://img.icons8.com/ios/50/000000/mysql-logo.png"/>
 
 ## Desafio
 
@@ -33,3 +37,8 @@ create table filmes (
 - [ ] Documentação via [Swagger](https://swagger.io/)
 
 ### Projeto Finalizado
+
+#### REFERENCIAS
+
+<a target="_blank" href="https://icons8.com/icon/hsPbhkOH4FMe/node-js">Node Js icon by Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/39858/mysql-logo">MySQL Logo icon by Icons8</a>
