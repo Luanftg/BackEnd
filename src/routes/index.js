@@ -1,10 +1,9 @@
 import express from 'express';
 import filmeController from '../controllers/filmesController.js';
+import healthCheck from '../controllers/healthCheck.js';
 const routes = express.Router();
 
-routes.get('/', (req,res)=> {
-    res.send("Olá Mundo!");
-});
+routes.get('/', healthCheck.health);
 routes.get('/filmes', filmeController.listarFilme);
 routes.get('/filme/:id', (req,res)=> {
     console.log(req.params);
