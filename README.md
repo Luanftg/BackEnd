@@ -3,6 +3,7 @@
 # API - REST para StationOne-Filmes :computer:
 
 ## Tecnologias
+
 <center>
 <img src="https://img.icons8.com/fluency/48/000000/node-js.png"/>
 <img src="https://img.icons8.com/ios/50/000000/mysql-logo.png"/>
@@ -11,13 +12,13 @@
 ## Desafio
 
 <center>
-<img src="./assets/back.png"/>
+<img src="./assets/../src/assets/back.png"/>
 </center>
 
 ## Solução
 
 - [ ] Construção do Banco de Dados MySQL
-- [ ] Criação da tabela filmes
+- [x] Criação da tabela filmes
 
 ```javascript
 create table filmes (
@@ -40,8 +41,8 @@ alter table filme
 - [ ] Instalação das libs:
   - [x] [express](http://expressjs.com/pt-br/)
   - [x] [nodemon](https://nodemon.io/)
-  - [ ] [ORM sequelize](https://sequelize.org/)
-  - [ ] [mysql2](https://www.npmjs.com/package/mysql2)
+  - [x] [ORM sequelize](https://sequelize.org/)
+  - [x] [mysql2](https://www.npmjs.com/package/mysql2)
 - [ ] Criação dos endpoints:
   - [ ] GET - `/filmes`
   - [ ] GET - `/filmes/:id`

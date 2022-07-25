@@ -1,10 +1,12 @@
-import { DataTypes } from 'sequelize/types';
+import { DataTypes } from 'sequelize';
 import db from '../database/index.js';
 
-const Filmes = db.define("Filmes",{
+const Filmes = db.define(
+    "Filmes",
+    {
     id: {
         type: DataTypes.INTEGER,
-        primayKey: true,
+        primaryKey: true,
         autoIncrement: true,
     },
     titulo: {
@@ -22,6 +24,10 @@ const Filmes = db.define("Filmes",{
     updatedAt: {
         type: DataTypes.DATE,
     },
-}, {
-    tableName: 'filmes',
-});
+}, 
+{
+    tableName: "filme",
+}
+);
+
+export default Filmes;
