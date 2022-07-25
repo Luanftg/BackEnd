@@ -17,7 +17,7 @@
 
 ## Solução
 
-- [ ] Construção do Banco de Dados MySQL
+- [x] Construção do Banco de Dados MySQL
 - [x] Criação da tabela filmes
 
 ```javascript
@@ -38,16 +38,25 @@ alter table filme
 ```
 
 - [x] Utilização de fluxo de trabalho: [git flow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow)
-- [ ] Instalação das libs:
+- [x] Instalação das libs:
   - [x] [express](http://expressjs.com/pt-br/)
   - [x] [nodemon](https://nodemon.io/)
   - [x] [ORM sequelize](https://sequelize.org/)
   - [x] [mysql2](https://www.npmjs.com/package/mysql2)
-- [ ] Criação dos endpoints:
-  - [ ] GET - `/filmes`
-  - [ ] GET - `/filmes/:id`
-  - [ ] POST `/filme` 
-- [x] Collections no *POSTMAN* e *Thunder Client* para testar o funcionamento das requisições e resostas de status code
+- [x] Criação dos endpoints:
+  - [x] GET`/`
+  - [x] GET - `/filmes`
+  - [x] GET - `/filmes/:id`
+  - [x] POST `/filmes`
+  - [x] DELETE `/filmes/:id`
+  - [x] PUT `/filmes/:id`
+- [x] Collections no *POSTMAN* e *Thunder Client* para testar o funcionamento das requisições 
+- [x]  Respostas de status code:
+  - [x]  200 : OK
+  - [x]  201 : created
+  - [x]  204 : deleted
+  - [x]  400 : bad request
+  - [x]  500 : server error:  *``Ocorreu algum problema com a deleção``*
 - [ ] Documentação via [Swagger](https://swagger.io/)
 
 ### Projeto Finalizado
@@ -56,7 +65,7 @@ alter table filme
 
 </center>
 
-#### REFERENCIAS
+#### REFERÊNCIAS
 
 <a target="_blank" href="https://icons8.com/icon/hsPbhkOH4FMe/node-js">Node Js icon by Icons8</a>
 <a target="_blank" href="https://icons8.com/icon/39858/mysql-logo">MySQL Logo icon by Icons8</a>
