@@ -1,6 +1,6 @@
 <img src="https://img.icons8.com/external-phatplus-lineal-color-phatplus/64/000000/external-api-cloud-security-phatplus-lineal-color-phatplus.png"/>
 
-# API - REST para StationOne-Filmes :computer:
+# API - REST para StationOne-Filmes :computer
 
 ## Tecnologias
 
@@ -33,7 +33,7 @@ create table filmes (
 
 ```javascript
 alter table filme 
-	add createdAt date,
+  add createdAt date,
   add updatedAt date;
 ```
 
@@ -44,13 +44,13 @@ alter table filme
   - [x] [ORM sequelize](https://sequelize.org/)
   - [x] [mysql2](https://www.npmjs.com/package/mysql2)
 - [x] Criação dos endpoints:
-  - [x] GET`/`
+  - [x] GET`/`      (*'HEALTH CHECK'*)
   - [x] GET - `/filmes`
   - [x] GET - `/filmes/:id`
   - [x] POST `/filmes`
   - [x] DELETE `/filmes/:id`
   - [x] PUT `/filmes/:id`
-- [x] Collections no *POSTMAN* e *Thunder Client* para testar o funcionamento das requisições 
+- [x] Collections no *POSTMAN* e *Thunder Client* para testar o funcionamento das requisições
 - [x]  Respostas de status code:
   - [x]  200 : OK
   - [x]  201 : created

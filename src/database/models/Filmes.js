@@ -1,5 +1,6 @@
 import { DataTypes } from 'sequelize';
-import db from '../database/index.js';
+import db from '../index.js';
+import Categoria from './Categorias.js';
 
 const Filmes = db.define(
     "Filmes",
@@ -23,6 +24,13 @@ const Filmes = db.define(
     },
     updatedAt: {
         type: DataTypes.DATE,
+    },
+    categoriaId: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: Categoria,
+            key: "categoriaId",
+        },
     },
 }, 
 {

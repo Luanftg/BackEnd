@@ -1,9 +1,9 @@
-import Filmes from '../models/Filmes.js';
+import Filmes from '../database/models/index.js';
 
-const produtoController = {
+const filmeController = {
     listarFilme: async (req,res) => {
         const listaDeFilmes = await Filmes.findAll();
-        res.json(listaDeFilmes);
+        res.status(200).json(listaDeFilmes);
     },
     
     async cadastrarFilme (req,res) {
@@ -57,5 +57,5 @@ const produtoController = {
 };
 
 
-export default produtoController;
+export default filmeController;
 
