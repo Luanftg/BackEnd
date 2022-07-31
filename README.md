@@ -44,20 +44,27 @@ alter table filme
   - [x] [ORM sequelize](https://sequelize.org/)
   - [x] [mysql2](https://www.npmjs.com/package/mysql2)
 - [x] Criação dos endpoints:
+- [x] **Filmes**
   - [x] GET`/`      (*'HEALTH CHECK'*)
   - [x] GET - `/filmes`
   - [x] GET - `/filmes/:id`
   - [x] POST `/filmes`
   - [x] DELETE `/filmes/:id`
-  - [x] PUT `/filmes/:id`
+- [x] **Categorias**
+  - [x] GET `/categorias`
+  - [x] POST `/categorias/`
+  - [x] GET `/categorias/:id`
+  - [x] PUT `/categorias/:id`
+  - [x] DELETE `/categorias/:id`
 - [x] Collections no *POSTMAN* e *Thunder Client* para testar o funcionamento das requisições
 - [x]  Respostas de status code:
   - [x]  200 : OK
   - [x]  201 : created
   - [x]  204 : deleted
   - [x]  400 : bad request
+  - [x]  404 : resource not found
   - [x]  500 : server error:  *``Ocorreu algum problema com a deleção``*
-- [ ] Documentação via [Swagger](https://swagger.io/)
+- [x] Documentação via [Swagger](https://swagger.io/)
 
 ### Projeto Finalizado
 

@@ -9,11 +9,4 @@ Categoria.hasMany(Filmes, {
     foreignKey: 'categoriaId',
 });
 
-const models = {
-    Categoria,
-    Filmes
-}
-
-console.log(models);
-console.log(Filmes);
-export default {Filmes, Categoria};
+export default Filmes;

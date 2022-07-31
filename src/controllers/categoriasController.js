@@ -1,14 +1,14 @@
-import Categorias from '../database/models/index.js';
+import Categoria from '../database/models/Categorias.js';
 
 const categoriaController = {
     listarCategoria: async (req,res) => {
-        const listaDeCategorias = await Categorias.findAll();
+        const listaDeCategorias = await Categoria.findAll();
         res.status(200).json(listaDeCategorias);
     },
     
     async cadastrarCategoria (req,res) {
         const { nome } = req.body;
-        const novoCategoria = await Categorias.create({
+        const novoCategoria = await Categoria.create({
             nome
         });
         res.status(201).json(novoCategoria);
@@ -19,12 +19,12 @@ const categoriaController = {
             
             const { id } = req.params;
     
-            await Categorias.destroy({
+            await Categoria.destroy({
                 where: {
                     id,
                 },
             });
-            res.status(204);
+            res.status(204).json('categoria excluida com sucesso');
         } catch (error) {
             res.status(500).json('Ocorreu algum problema com a deleção');
         }
@@ -36,19 +36,20 @@ const categoriaController = {
 
         if (!id) return res.status(400).json('id não enviado.');
 
-        const CategoriaAtualizado = await Categorias.update({
-            nome
-        });
+        const CategoriaAtualizado = await Categoria.update({nome},{where:{id}});
 
-        res.json(CategoriaAtualizado);
+        res.status(200).json(CategoriaAtualizado);
 
     },
 
     async buscaCategoriaID (req,res) {
         const {id} = req.params;
-        const retornaCategoriaId  = await Categorias.findByPk(id);
+        
+        const retornaCategoriaId  = await Categoria.findByPk(id);
+        
+        if (retornaCategoriaId === null) return res.status(404).json('categoria não encontrada.');
 
-        res.json(retornaCategoriaId);
+        res.status(200).json(retornaCategoriaId);
     }
 };
 
