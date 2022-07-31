@@ -1,6 +1,6 @@
 <img src="https://img.icons8.com/external-phatplus-lineal-color-phatplus/64/000000/external-api-cloud-security-phatplus-lineal-color-phatplus.png"/>
 
-# API - REST para StationOne-Filmes :computer
+# API - REST para StationOne-Filmes :computer:
 
 ## Tecnologias
 
